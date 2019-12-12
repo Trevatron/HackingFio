@@ -1,0 +1,458 @@
+﻿Apresentação..........................................................................................................................
+Objetivo...................................................................................................................................
+Declaração de Escopo....................................................................................................................................
+Objetivo do documento ................................................................................................................................................
+Descrição do sistema.....................................................................................................................................
+Partes afetadas....................................................................................................................................
+O que o projeto não inclui..........................................................................................................................................
+Regras de Negócio ..................................................................................................................................................
+Lista de Requisitos ..................................................................................................................................................
+Objetivo do documento ..................................................................................................................................................
+Requisitos.................................................................................................................................
+LIsta de Atores ..................................................................................................................................................
+Objetivo do documento .................................................................................................................................................
+Atores.......................................................................................................................................
+Diagramas de Casos de Uso ................................................................................................................................................
+Descrição de Casos de Uso .................................................................................................................................................
+Diagramas de Atividade ..................................................................................................................................................
+Diagramas de Classe.......................................................................................................................................
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Apresentação
+
+
+
+
+
+
+De acordo com as fragilidades do atual sistema de gerenciamento da saúde nacional, o time TheGodCode decidiu por  criar o Projeto Tbox. Este visa aproximar os  pacientes de maneira inteligente e digital, criando um histórico médico com validade nacional e pela internet, ao mesmo tempo disponibilizar uma
+ferramenta para a obtenção das informações e levantamento de dados com relação a Tuberculose, para que assim o usuário possua uma forma de controlar o uso de seus medicamentos e se sinta mais acolhido.
+
+
+
+
+Objetivo
+
+
+Este documento tem como objetivo auxiliar a equipe de desenvolvimento da TheGodCode, nas etapas de criação do Projeto Tbox
+
+
+
+
+Declaração de Escopo
+
+
+30\11\2019
+Versão 1.0
+
+
+Objetivo do documento
+
+
+Especificar junto a Fiocruz o que será desenvolvido para o projeto Tbox, em toda rede pública do país. A partir deste documento, serão definidos os objetivos primários e secundários, suas limitações, problemas a serem resolvidos, e todo conjunto de informações iniciais que delimitam as fronteiras do projeto.
+
+
+
+
+
+
+
+
+
+
+Descrição do sistema
+
+
+A partir de uma visão inicial do problema da tuberculose no Brasil,  o sistema irá auxiliar o paciente a ter controle dos usos do medicamento para tuberculose, reunindo assim o as informações de uso.
+O sistema funcionará em um ambiente mobile, possibilitando funções como:
+
+
+-Check do uso diário de medicamento;
+-Controle de uso do  medicamento por registros de uso;
+-Cadastro e controle do paciente, por parte das unidades de saúde;
+-Conexão via chat diretamente com o médico responsável;
+-Aviso para o usuário caso a falta de uso seja registrada;
+-O paciente ao terminar o tratamento irá receber um incentivo na forma de ingresso para uma sessão de cinema Brasileiro .
+
+
+
+
+Partes afetadas
+
+
+-Unidades de Atendimento da Rede SUS, como:
+-Hospitais Federais, Estaduais e Municipais;
+-Clínicas e suas variações;
+-Unidades de atendimento médico regionais;
+-Pacientes e funcionários.
+-O rede de cinema kinoplex (entra como executora do plano de incentivo)
+
+
+
+
+Benefícios Gerados
+-Obter maior informação sobre a quantidade de uso de medicamentos para tuberculose;
+-Obter visão geral e/ou específica do quadro de saúde nacional para tuberculose;
+-Melhorar a qualidade na apresentação de informações;
+-Melhorar a qualidade de serviços prestados aproximando o paciente do médico;
+-Melhorar a utilização de recursos;
+-Obter suporte para o gerenciamento de estratégias.
+
+
+O que o projeto não inclui
+
+
+Finanças e contabilidade da distribuição de medicamento;
+Gestão interna;
+Sistema auxiliar completo de logs do banco de dados;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Regra:
+	RN001
+	Objetivo:
+	 Direcionar os passos a serem aplicados pela unidade de saúde.
+	Versão:
+	1.0
+	Criada em:
+	30 de novembro 2019
+	Descrição da Regra de Negócio:
+	A unidade de saúde, junto ao médico serão os responsáveis pelo cadastro e instalação da aplicação para usuários. 
+	Aprovação:
+	Anotações:
+ 
+ 
+Nos termos acima,
+Acolho integralmente.
+Acolho parcialmente.
+Discordo.
+ 
+________________________________________
+Assinatura e carimbo do responsável pela contratante
+	
+
+
+
+
+
+
+
+
+
+
+
+Regra:
+	RN002
+	Objetivo:
+	Cancelamento e  revisão de dados
+	Versão:
+	1.0
+	Criada em:
+	30 de novembro 2019
+	Descrição da Regra de Negócio:
+	Se por qualquer razão o paciente não  ter mais acesso a plataforma, é de responsabilidade da unidade de saúde alterar e reorganizar o cadastro do paciente.
+	Aprovação:
+	Anotações:
+ 
+ 
+Nos termos acima,
+Acolho integralmente.
+Acolho parcialmente.
+Discordo.
+ 
+________________________________________
+Assinatura e carimbo do responsável pela contratante
+	
+
+
+
+
+
+
+
+Regra:
+	RN003
+	Objetivo:
+	Consultas e acompanhamento
+	Versão:
+	1.0
+	Criada em:
+	30 de novembro 2019
+	Descrição da Regra de Negócio:
+	A aplicação tem por definição notificar o paciente de sua consulta,sendo assim de sua responsabilidade comparecer, para a continuação do tratamento. 
+	Aprovação:
+	Anotações:
+ 
+ 
+Nos termos acima,
+Acolho integralmente.
+Acolho parcialmente.
+Discordo.
+ 
+________________________________________
+Assinatura e carimbo do responsável pela contratante
+	
+
+
+
+
+
+
+
+
+
+
+
+Regra:
+	RN004
+	Objetivo:
+	Parentes e responsáveis cadastrados. 
+
+
+	Versão:
+	1.0
+	Criada em:
+	30 de novembro 2019
+	Descrição da Regra de Negócio:
+	
+
+O paciente, deve inserir um responsável pelo acompanhamento do seu tratamento. Esse responsável, será notificado caso o usuário interrompa o tratamento por algum motivo. 
+	Aprovação:
+	Anotações:
+ 
+ 
+Nos termos acima,
+Acolho integralmente.
+Acolho parcialmente.
+Discordo.
+ 
+________________________________________
+Assinatura e carimbo do responsável pela contratante
+	
+
+
+
+
+
+
+
+
+
+Regra:
+	RN005
+	Objetivo:
+	Continuidade de acompanhamento
+
+
+	Versão:
+	1.0
+	Criada em:
+	30 de novembro 2019
+	Descrição da Regra de Negócio:
+	
+
+O responsável e a unidade de saúde serão notificados o responsável pelo paciente não cumpra com suas obrigações de registro. 
+	Aprovação:
+	Anotações:
+ 
+ 
+Nos termos acima,
+Acolho integralmente.
+Acolho parcialmente.
+Discordo.
+ 
+________________________________________
+Assinatura e carimbo do responsável pela contratante
+	
+
+
+
+
+
+
+
+Regra:
+	RN006
+	Objetivo:
+	Partes envolvidas
+
+
+	Versão:
+	1.0
+	Criada em:
+	30 de novembro 2019
+	Descrição da Regra de Negócio:
+	
+
+É de inteira responsabilidade da unidade de saúde e do responsável escolhido pelo paciente a manutenção do seu estado.
+	Aprovação:
+	Anotações:
+ 
+ 
+Nos termos acima,
+Acolho integralmente.
+Acolho parcialmente.
+Discordo.
+ 
+________________________________________
+Assinatura e carimbo do responsável pela contratante
+	
+
+
+
+
+
+Regra:
+	RN007
+	Objetivo:
+	Manter a fidelização do paciente ao tratamento.
+	Versão:
+	1.0
+	Criada em:
+	30 de novembro de 2019
+	Descrição da Regra de Negócio:
+	O usuário terá uma premiação quando terminar o tratamento, o usuário será agraciado com um ingresso para uma sessão de cinema nacional. 
+
+
+	Aprovação:
+	Anotações:
+ 
+ 
+Nos termos acima,
+Acolho integralmente.
+Acolho parcialmente.
+Discordo.
+ 
+________________________________________
+Assinatura e carimbo do responsável pela contratante
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Requisitos
+
+
+Esta lista está organizada por tipos de requisitos funcionais:
+
+
+
+
+RF01 - Direcionar os passos a serem aplicados pela unidade de saúde;
+RF02- Cancelamento e  revisão de dados;
+RF03- Consultas e acompanhamento;
+RF04- Parentes e responsáveis cadastrados;
+RF05- Alertar a unidade de saúde;
+RF06-  Partes envolvidas;
+RF07- Manter a fidelização do paciente no tratamento.
+
+
+
+
+
+
+
+
+Lista de Atores
+
+
+31\11\2019
+Versão 1.0
+
+
+Objetivo do documento
+
+
+Este documento apresenta os atores, responsáveis por utilizar e alimentar o sistema
+para a disseminação da plataforma para o público alvo.
+Estes atores foram levantados através de análises sobre a lista de requisitos.
+ATORES
+
+
+
+
+-Médico-
+Realiza a conscientização sobre a aplicação e auxilia na instalação da mesma. 
+
+
+-Enfermeiro-
+Realiza procedimentos internos, e pode também vir a realizar o processo de instalação.
+
+
+-Recepção-
+Responsável por fazer o atendimento e marcação de consulta e verificação inicial da condição de ficha do paciente.
+
+
+-Paciente-
+Qualquer indivíduo que esteja cadastrado no sistema e se utilize do mesmo.
+
+
+Diagrama de Caso
